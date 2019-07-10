@@ -52,7 +52,7 @@ body {font-family: "Lato", sans-serif}
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
 </div>
 
-<!-- Page content -->
+<!-- SLIDE SHOW -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <div class="mySlides w3-display-container w3-center">
@@ -70,48 +70,52 @@ body {font-family: "Lato", sans-serif}
   <div class="mySlides w3-display-container w3-center">
     <img src="slider5.jpg" style="width:100%">
   </div>
+  <!--  END SLIDE SHOW   -->
 
-  <!-- About -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">The Photographers</h2>
-    <?php echo get_post_meta(get_the_id(), 'about', true); ?>
+    <!-- ABOUT -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide">The Photographers</h2>
+        <p class="w3-justify">Those special times in our lives we want captured with a flash .</p>
+        <p class="w3-justify">From newborns, first holy communions  family  shoots, weddings  parties .. You name it.. We are the ladies to get those special moments &amp; memories  for you! </p>
+        <p class="w3-justify">Our reviews speak for us </p>
+        <p>find us on FaceBook: https://www.facebook.com/momentsandmemoriesbyDandF/</p>
+        <p class="w3-justify">Fantastic rates and packages available</p>
+        <p class="w3-justify">We won't be beaten on price or quality. We have 10 Years combined experience in photography with two fun personalities to heighten your day.. Moments&amp;memories are ready to capture your special times</p>    
 
-    <div class="w3-row w3-padding-32">
-      <div class="w3-half">
-        <h3>Donna</h3>
-        <img style="border-radius:50%;" src="donna.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-half">
-        <h3>fi</h3>
-        <img style="border-radius:50%;" src="fiona.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-     
+        <div class="w3-row w3-padding-32">
+            <div class="w3-half">
+                <h3>Donna</h3>
+                <img style="border-radius:50%;" src="donna.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+            <div class="w3-half">
+                <h3>fi</h3>
+                <img style="border-radius:50%;" src="fiona.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+            </div>
+        </div>
     </div>
-  </div>
+    <!--   END ABOUT   -->
 
-  <div class="w3-container w3-padding-64 w3-pale-red" id="tour">
-    <div class="w3-content w3-center">
-      <div class="w3-half w3-margin-bottom">
-          <img src="offer1.jpg"  class="w3-image"/>
-      </div>
-      <div class="w3-half w3-margin-bottom">
-          <img src="offer3.jpg"  class="w3-image"/>
-      </div>
-
+    <!--   OFFERS    -->
+    <div class="w3-container w3-padding-64 w3-pale-red" id="tour">
+        <div class="w3-content w3-center">
+            <div class="w3-half w3-margin-bottom">
+                <img src="offer1.jpg"  class="w3-image"/>
+            </div>
+            <div class="w3-half w3-margin-bottom">
+                <img src="offer3.jpg"  class="w3-image"/>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="w3-container w3-padding-64 w3-pale-red" id="tour">
-    <div class="w3-content w3-center">
-
-      <div class="w3-margin-bottom">
-          <img src="offer2.jpg"  class="w3-image"/>
-      </div>
-
+    <div class="w3-container w3-padding-64 w3-pale-red" id="tour">
+        <div class="w3-content w3-center">      
+            <div class="w3-margin-bottom">
+                <img src="offer2.jpg"  class="w3-image"/>
+            </div>
+        </div>
     </div>
-  </div>
+    <!-- END OF OFFERS -->
 
-  <!-- Services -->
+  <!-- SERVICES -->
   <div class="w3-container w3-padding-64 w3-pale-red" id="tour">
     <div class="w3-content w3-center">
 
@@ -119,9 +123,7 @@ body {font-family: "Lato", sans-serif}
           <ul class="w3-ul w3-border w3-center w3-hover-shadow  w3-sand">
                 <li class="w3-light-grey w3-xlarge w3-padding-32">Newborn shoots<br><br><br></li>
                 <li class="w3-padding-16">with 1 complimentary digital images<br><br><br></li>
-                <li class="w3-padding-16">
-                <h2 class="w3-wide">from £30</h2>
-                </li>
+                <li class="w3-padding-16"><h2 class="w3-wide">from £30</h2></li>
                 <li class="w3-light-grey w3-padding-24">
                 <button id="babyselected" class="w3-button w3-green w3-padding-large">Select</button>
                 </li>
@@ -132,9 +134,7 @@ body {font-family: "Lato", sans-serif}
           <ul class="w3-ul w3-border w3-center w3-hover-shadow  w3-sand">
                 <li class="w3-light-grey w3-xlarge w3-padding-32">Family outdoor  shoots<br><br></li>
                 <li class="w3-padding-16">with 1 complimentary digital images<br><br><br></li>
-                <li class="w3-padding-16">
-                <h2 class="w3-wide">from £65 </h2>
-                </li>
+                <li class="w3-padding-16"><h2 class="w3-wide">from £65 </h2></li>
                 <li class="w3-light-grey w3-padding-24">
                 <button id="familyselected" class="w3-button w3-green w3-padding-large">Select</button>
                 </li> 
@@ -144,12 +144,8 @@ body {font-family: "Lato", sans-serif}
       <div class="w3-quarter w3-margin-bottom">
           <ul class="w3-ul w3-border w3-center w3-hover-shadow  w3-sand">
                 <li class="w3-light-grey w3-xlarge w3-padding-32">Party, anniversary, formal(per couple) first Communion</li>
-                <li class="w3-padding-16">Free call out to venue(within reasonable distance) 
-    1 complimentary digital print
-    Photos available to purchase</li>
-                <li class="w3-padding-16">
-                <h2 class="w3-wide">from £65</h2>
-                </li>
+                <li class="w3-padding-16">Free call out to venue(within reasonable distance) 1 complimentary digital print Photos available to purchase</li>
+                <li class="w3-padding-16"><h2 class="w3-wide">from £65</h2></li>
                 <li class="w3-light-grey w3-padding-24">
                 <button id="partyselected" class="w3-button w3-green w3-padding-large">Select</button>
                 </li>        
@@ -160,10 +156,7 @@ body {font-family: "Lato", sans-serif}
           <ul class="w3-ul w3-border w3-center w3-hover-shadow  w3-sand">
                 <li class="w3-light-grey w3-xlarge w3-padding-32">Wedding package<br><br><br></li>
                   <li class="w3-padding-16">Canvas, wedding album and print packages available to purchase<br><br></li>
-                  <li class="w3-padding-16">
-                  <h2 class="w3-wide">from
-      £750</h2>
-                  </li>
+                  <li class="w3-padding-16"><h2 class="w3-wide">from £750</h2></li>
                   <li class="w3-light-grey w3-padding-24">
                   <button id="weddingselected" class="w3-button w3-green w3-padding-large">Select</button>
                   </li>   
@@ -175,9 +168,7 @@ body {font-family: "Lato", sans-serif}
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-
 	<div class="w3-row w3-padding-32">
-
 		<div class="mapouter">
 			<div class="gmap_canvas">
 				<iframe width="768" height="372" id="gmap_canvas" src="https://maps.google.com/maps?q=BT476AN&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -185,19 +176,18 @@ body {font-family: "Lato", sans-serif}
 			</div>
 			<style>.mapouter{position:relative;text-align:right;height:372px;width:768px;}.gmap_canvas {overflow:hidden;background:none!important;height:372px;width:768px;}</style>
 		</div>
-
 	</div>
 
-
     <div class="w3-row w3-padding-32">
-	
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <?php echo get_post_meta(get_the_id(), 'contact', true); ?>
-
-
+            <i class="fa fa-map-marker" style="width:30px"></i> HUB 5, Distillary Brae, Derry, N.Ireland BT476AN<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: 07566240106<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> momentsandmemoriesonline@gmail.com<br>
+            <p>Any other enquires drop us a message ✉ we will be happy to help with any questions you have</p>
       </div>
 
       <div class="w3-col m6 contact-form">
+          <form name="contact" method="POST" data-netlify="true">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
               <input id="name" class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -225,7 +215,7 @@ body {font-family: "Lato", sans-serif}
             <input id="message" class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           </div>
           <button class="w3-button w3-pale-red w3-section w3-right" id="submit-form">SEND</button>
-
+        </form>
       </div>
       <div class="w3-col m6 contact-form-sent" style="background-color:#570430;padding:60px 0;text-align:center;color:white;opacity: 0;transition:2s;">
         <h3>Message has been sent<h3>
@@ -247,10 +237,6 @@ body {font-family: "Lato", sans-serif}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
 
-<script>
-var mailerpath = "<?php echo get_post_meta(get_the_id(), 'mailer', true); ?>";
-
-</script>
 <script src="main.js">
 
 </script>
