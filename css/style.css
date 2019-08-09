@@ -11,7 +11,11 @@ Text Domain: robs
 /*
  * Globals
  */
-
+ /* @media all and (orientation: landscape) {
+	body{
+		width: 100%;
+	}
+ } */
 .w3-pale-red{
 	background-color:#570430!important;
 	
