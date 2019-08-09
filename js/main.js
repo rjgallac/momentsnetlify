@@ -1,82 +1,4 @@
 
-var contactForm = document.querySelector('.contact-form');
-var contactFormSent = document.querySelector('.contact-form-sent');
-
-var babySelect = document.querySelector('#babyselected');
-babySelect.addEventListener('click', function(){
-    document.getElementById('service').selectedIndex = 1;
-    var elmnt = document.getElementById("contact");
-    elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    contactFormSent.style.display = "none";
-    contactForm.style.display = "block";
-    contactForm.style.opacity = "1";
-
-})
-try{
-    var familySelect = document.querySelector('#familyselected');
-    familySelect.addEventListener('click', function(){
-        document.getElementById('service').selectedIndex = 2;
-        var elmnt = document.getElementById("contact");
-        elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        contactFormSent.style.display = "none";
-        contactForm.style.display = "block";
-        contactForm.style.opacity = "1";
-
-    })
-}catch(err){
-
-}
-try{
-    var partySelect = document.querySelector('#partyselected');
-    partySelect.addEventListener('click', function(){
-        document.getElementById('service').selectedIndex = 3;
-        var elmnt = document.getElementById("contact");
-        elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        contactFormSent.style.display = "none";
-        contactForm.style.display = "block";
-        contactForm.style.opacity = "1";
-
-    })
-}catch(err){
-    
-}
-var weddingSelect = document.querySelector('#weddingselected');
-weddingSelect.addEventListener('click', function(){
-    document.getElementById('service').selectedIndex = 4;
-    var elmnt = document.getElementById("contact");
-    elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    contactFormSent.style.display = "none";
-    contactForm.style.display = "block";
-    contactForm.style.opacity = "1";
-})
-
-function submitForm (e){
- var xhr = new XMLHttpRequest();
- var name = document.querySelector('#name');
- var email = document.querySelector('#email');
- var preferreddate = document.querySelector('#preferreddate');
- var service = document.querySelector('#service option:checked');
- var message = document.querySelector('#message');
-
- xhr.open("POST",  mailerpath, true);
-
- xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
- 
-
- //Send the proper header information along with the request
- //xhr.setRequestHeader("Content-Type", "text/html");
-
- xhr.onreadystatechange = function() { // Call a function when the state changes.
-     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-         // Request finished. Do processing here.
-         contactForm.style.display = "none";
-         contactFormSent.style.display = "block";
-         contactFormSent.style.opacity = "1";
-     }
- }
- xhr.send('name='+name.value+'&email='+email.value+'&message='+message.value+'&preferreddate='+preferreddate.value+'&service='+service.value); 
-}
 
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
@@ -111,8 +33,4 @@ if (event.target == modal) {
 modal.style.display = "none";
 }
 }
-
-var formBtn = document.querySelector('#submit-form');
-
-formBtn.addEventListener('click', submitForm);
 
