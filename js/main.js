@@ -12,26 +12,34 @@ babySelect.addEventListener('click', function(){
     contactForm.style.opacity = "1";
 
 })
-var familySelect = document.querySelector('#familyselected');
-familySelect.addEventListener('click', function(){
-    document.getElementById('service').selectedIndex = 2;
-    var elmnt = document.getElementById("contact");
-    elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    contactFormSent.style.display = "none";
-    contactForm.style.display = "block";
-    contactForm.style.opacity = "1";
+try{
+    var familySelect = document.querySelector('#familyselected');
+    familySelect.addEventListener('click', function(){
+        document.getElementById('service').selectedIndex = 2;
+        var elmnt = document.getElementById("contact");
+        elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        contactFormSent.style.display = "none";
+        contactForm.style.display = "block";
+        contactForm.style.opacity = "1";
 
-})
-var partySelect = document.querySelector('#partyselected');
-partySelect.addEventListener('click', function(){
-    document.getElementById('service').selectedIndex = 3;
-    var elmnt = document.getElementById("contact");
-    elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    contactFormSent.style.display = "none";
-    contactForm.style.display = "block";
-    contactForm.style.opacity = "1";
+    })
+}catch(err){
 
-})
+}
+try{
+    var partySelect = document.querySelector('#partyselected');
+    partySelect.addEventListener('click', function(){
+        document.getElementById('service').selectedIndex = 3;
+        var elmnt = document.getElementById("contact");
+        elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        contactFormSent.style.display = "none";
+        contactForm.style.display = "block";
+        contactForm.style.opacity = "1";
+
+    })
+}catch(err){
+    
+}
 var weddingSelect = document.querySelector('#weddingselected');
 weddingSelect.addEventListener('click', function(){
     document.getElementById('service').selectedIndex = 4;
